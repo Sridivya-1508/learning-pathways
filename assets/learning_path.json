@@ -1,0 +1,180 @@
+{
+    "LearningPath": {
+      "Title": "Junior Product Manager Learning Plan",
+      "Description": "A comprehensive plan for developing essential skills and knowledge for Junior Product Managers at EA, emphasizing critical thinking and adaptability.",
+      "Phases": [
+        {
+          "Title": "Phase 1: Onboarding and Rapid Contribution",
+          "Duration": "Months 1-3",
+          "Focus": "Quickly integrate into the team, understand processes, and start contributing.",
+          "Modules": [
+            {
+              "Number": 1,
+              "Title": "Introduction to Product Management",
+              "Description": "Core concepts, principles, frameworks, roles, responsibilities, and key skills for success.",
+              "FocusArea": "Product Management Fundamentals"
+            },
+            {
+              "Number": 2,
+              "Title": "EA's Product Development Process",
+              "Description": "In-depth understanding of EA's unique methodology, phase breakdown, and stakeholder management.",
+              "FocusArea": "Product Management Fundamentals"
+            },
+            {
+              "Number": 3,
+              "Title": "Effective Communication for Product Managers",
+              "Description": "Tailoring communication to different audiences, active listening, feedback, conflict resolution, presentations, and facilitation.",
+              "FocusArea": "Communication and Collaboration"
+            },
+            {
+              "Number": 4,
+              "Title": "Qualitative Research Methods (if applicable)",
+              "Description": "Player interviews, focus groups, ethnographic research, analyzing feedback, and uncovering player needs.",
+              "FocusArea": "Market Research & Analysis"
+            }
+          ]
+        },
+        {
+          "Title": "Phase 2: Core Skills Development",
+          "Duration": "Months 4-6",
+          "Focus": "Build foundational skills in feature development, prioritization, roadmapping, and explore live operations & community engagement.",
+          "Modules": [
+            {
+              "Number": 5,
+              "Title": "Ideation and Concept Development",
+              "Description": "Brainstorming, evaluating feature ideas, building prototypes, and conducting playtests.",
+              "FocusArea": "Feature Development & Prioritization"
+            },
+            {
+              "Number": 6,
+              "Title": "Feature Specification and Documentation",
+              "Description": "Writing clear specifications, collaborating with teams, creating user stories, and documenting decisions.",
+              "FocusArea": "Feature Development & Prioritization"
+            },
+            {
+              "Number": 7,
+              "Title": "Agile Product Management",
+              "Description": "Agile principles, scrum methodology, sprint planning, backlog grooming, adapting to change, and uncertainty management.",
+              "FocusArea": "Roadmap Planning & Execution"
+            },
+            {
+              "Number": 8,
+              "Title": "Roadmap Development and Management",
+              "Description": "Aligning roadmap with objectives, balancing short-term and long-term goals, and communicating with stakeholders.",
+              "FocusArea": "Roadmap Planning & Execution"
+            },
+            {
+              "Number": 9,
+              "Title": "Live Operations and Monetization Fundamentals",
+              "Description": "Basic principles of live service games, in-game economies, designing events and updates, balancing engagement and revenue.",
+              "FocusArea": "Live Operations & Monetization"
+            },
+            {
+              "Number": 10,
+              "Title": "Community Management Basics",
+              "Description": "Understanding community building, engaging with players, managing feedback, and addressing concerns.",
+              "FocusArea": "Community Management & Engagement"
+            }
+          ]
+        },
+        {
+          "Title": "Phase 3: Expanding Expertise",
+          "Duration": "Months 7-12",
+          "Focus": "Deepen knowledge in market analysis, project management, stakeholder management, and specialize in areas based on interest and project needs.",
+          "Modules": [
+            {
+              "Number": 11,
+              "Title": "Quantitative Research Methods",
+              "Description": "Surveys, questionnaires, data collection, statistical analysis, data interpretation, market segmentation, and targeting.",
+              "FocusArea": "Market Research & Analysis"
+            },
+            {
+              "Number": 12,
+              "Title": "Competitor Analysis",
+              "Description": "Evaluating competitor games, SWOT analysis, identifying trends, opportunities, and threats.",
+              "FocusArea": "Market Research & Analysis"
+            },
+            {
+              "Number": 13,
+              "Title": "Industry Trend Analysis",
+              "Description": "Monitoring emerging technologies and platforms, analyzing market reports, and staying ahead of the curve.",
+              "FocusArea": "Market Research & Analysis"
+            },
+            {
+              "Number": 14,
+              "Title": "Project Management Fundamentals",
+              "Description": "Project planning, scheduling, resource allocation, risk management, and progress tracking.",
+              "FocusArea": "Roadmap Planning & Execution"
+            },
+            {
+              "Number": 15,
+              "Title": "Release Management and Launch Planning",
+              "Description": "Preparing for game launch, post-launch support, coordinating with teams, managing timelines, and expectations.",
+              "FocusArea": "Roadmap Planning & Execution"
+            },
+            {
+              "Number": 16,
+              "Title": "Stakeholder Management",
+              "Description": "Identifying stakeholders, building relationships, managing expectations, and delivering results.",
+              "FocusArea": "Communication and Collaboration"
+            },
+            {
+              "Number": 17,
+              "Title": "Live Operations and Monetization (Advanced Strategies)",
+              "Description": "Advanced techniques for in-game economies, pricing, promotions, and long-term player engagement.",
+              "FocusArea": "Live Operations & Monetization"
+            },
+            {
+              "Number": 18,
+              "Title": "Community Management (Building and Engaging Communities)",
+              "Description": "Creating community strategies, fostering positive interactions, moderating discussions, and managing influencers.",
+              "FocusArea": "Community Management & Engagement"
+            },
+            {
+              "Number": 19,
+              "Title": "Localization and Culturalization (if applicable)",
+              "Description": "Adapting games for different regions and languages, considering cultural nuances and local preferences.",
+              "FocusArea": "Localization"
+            },
+            {
+              "Number": 20,
+              "Title": "Data Science and Analytics for Product Managers (Introduction)",
+              "Description": "Basic concepts of data science, data analysis techniques, interpreting results, and data-driven decision-making.",
+              "FocusArea": "Data Science & Analytics"
+            }
+          ]
+        },
+        {
+          "Title": "Phase 4: Continuous Growth",
+          "Duration": "Ongoing",
+          "Focus": "Pursue ongoing learning, specialize in areas of interest, develop leadership skills, and stay ahead of industry trends.",
+          "Modules": [
+            {
+              "Number": 21,
+              "Title": "Cross-functional Collaboration",
+              "Description": "Understanding team roles, fostering collaboration, navigating dynamics, and resolving conflicts.",
+              "FocusArea": "Communication and Collaboration"
+            },
+            {
+              "Number": 22,
+              "Title": "Negotiation and Influence",
+              "Description": "Building consensus, gaining buy-in, negotiating with partners, and influencing without authority.",
+              "FocusArea": "Communication and Collaboration"
+            },
+            {
+              "Number": 23,
+              "Title": "Data Science and Analytics for Product Managers (Advanced Techniques)",
+              "Description": "Advanced data analysis, predictive modeling, machine learning applications, and data-driven product optimization.",
+              "FocusArea": "Data Science & Analytics"
+            },
+            {
+              "Number": 24,
+              "Title": "Leadership and Management Skills for Product Managers",
+              "Description": "Developing leadership qualities, building high-performing teams, inspiring and motivating others, and strategic decision-making.",
+              "FocusArea": "Leadership & Management"
+            }
+          ]
+        }
+      ]
+    }
+  }
