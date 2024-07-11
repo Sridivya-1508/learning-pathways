@@ -1,9 +1,9 @@
-// roadmap_screen.dart
+// lib/roadmap_screen.dart
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'dart:convert';
 import 'models.dart'; // Import your data models
-import 'phase_detail_screen.dart'; // Import PhaseDetailScreen
+import 'phase_overview_screen.dart'; // Import PhaseOverviewScreen
 
 class RoadmapScreen extends StatefulWidget {
   @override
@@ -20,9 +20,13 @@ class _RoadmapScreenState extends State<RoadmapScreen> {
   }
 
   Future<LearningPath> loadLearningPathFromJson(String assetPath) async {
-    String jsonString = await rootBundle.loadString(assetPath);
-    Map<String, dynamic> jsonData = jsonDecode(jsonString);
-    return LearningPath.fromJson(jsonData['LearningPath']);
+    try {
+      String jsonString = await rootBundle.loadString(assetPath);
+      Map<String, dynamic> jsonData = jsonDecode(jsonString);
+      return LearningPath.fromJson(jsonData['LearningPath']);
+    } catch (e) {
+      throw Exception('Failed to load learning path: $e');
+    }
   }
 
   @override
@@ -51,10 +55,10 @@ class _RoadmapScreenState extends State<RoadmapScreen> {
     return GridView.builder(
       padding: EdgeInsets.all(10),
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 2,
+        crossAxisCount: 4,
         crossAxisSpacing: 10,
         mainAxisSpacing: 10,
-        childAspectRatio: 1,
+        childAspectRatio:  3, // Adjusted aspect ratio
       ),
       itemCount: learningPath.phases.length,
       itemBuilder: (context, phaseIndex) {
@@ -64,7 +68,7 @@ class _RoadmapScreenState extends State<RoadmapScreen> {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => PhaseDetailScreen(phase: phase),
+                builder: (context) => PhaseOverviewScreen(phase: phase),
               ),
             );
           },
@@ -73,32 +77,29 @@ class _RoadmapScreenState extends State<RoadmapScreen> {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(15),
             ),
-            child: Center(
-              child: Padding(
-                padding: EdgeInsets.all(20),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      phase.title,
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white,
-                      ),
-                      textAlign: TextAlign.center,
+            child: Padding(
+              padding: EdgeInsets.all(10),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Text(
+                    phase.title,
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
                     ),
-                    SizedBox(height: 10),
-                    Text(
-                      phase.duration,
-                      style: TextStyle(
-                        fontSize: 14,
-                        color: Colors.white70,
-                      ),
-                      textAlign: TextAlign.center,
+                  ),
+                  SizedBox(height: 5),
+                  Text(
+                    phase.duration,
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: Colors.white70,  
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
             ),
           ),

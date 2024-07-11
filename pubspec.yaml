@@ -54,6 +54,8 @@ dev_dependencies:
 flutter:
   assets:
     - "assets/data/learning_path.json"
+    - "assets/image.png"
+    - "assets/data/questions.json"
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

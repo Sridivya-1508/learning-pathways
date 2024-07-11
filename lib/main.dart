@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Project Manager Roadmap',
+      title: 'Product Manager Roadmap',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
