@@ -58,7 +58,7 @@ class _RoadmapScreenState extends State<RoadmapScreen> {
         crossAxisCount: 4,
         crossAxisSpacing: 10,
         mainAxisSpacing: 10,
-        childAspectRatio:  3, // Adjusted aspect ratio
+        childAspectRatio:  3/2, // Adjusted aspect ratio
       ),
       itemCount: learningPath.phases.length,
       itemBuilder: (context, phaseIndex) {
@@ -91,7 +91,7 @@ class _RoadmapScreenState extends State<RoadmapScreen> {
                       color: Colors.white,
                     ),
                   ),
-                  SizedBox(height: 5),
+                  SizedBox(height: 6),
                   Text(
                     phase.duration,
                     style: TextStyle(

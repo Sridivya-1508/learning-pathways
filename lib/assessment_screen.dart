@@ -1,4 +1,3 @@
-// assessment_screen.dart
 import 'package:flutter/material.dart';
 import 'models.dart'; // Import your data models
 
@@ -125,15 +124,14 @@ class _AssessmentScreenState extends State<AssessmentScreen> {
               child: Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  if (currentQuestionIndex > 0)
-                    ElevatedButton(
-                      onPressed: previousQuestion,
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.orange,
-                        foregroundColor: Colors.white, // Text color
-                      ),
-                      child: Text('Previous'),
+                  ElevatedButton(
+                    onPressed: currentQuestionIndex > 0 ? previousQuestion : null,
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.orange,
+                      foregroundColor: Colors.white, // Text color
                     ),
+                    child: Text('Previous'),
+                  ),
                   SizedBox(width: 10),
                   ElevatedButton(
                     onPressed: () {
@@ -156,15 +154,14 @@ class _AssessmentScreenState extends State<AssessmentScreen> {
                     },
                   ),
                   SizedBox(width: 10),
-                  if (currentQuestionIndex < widget.questions.length - 1)
-                    ElevatedButton(
-                      onPressed: skipQuestion,
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.purple,
-                        foregroundColor: Colors.white, // Text color
-                      ),
-                      child: Text('Skip'),
+                  ElevatedButton(
+                    onPressed: currentQuestionIndex < widget.questions.length - 1 ? skipQuestion : null,
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.purple,
+                      foregroundColor: Colors.white, // Text color
                     ),
+                    child: Text('Skip'),
+                  ),
                   SizedBox(width: 10),
                   if (currentQuestionIndex < widget.questions.length - 1)
                     ElevatedButton(
